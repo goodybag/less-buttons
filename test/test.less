@@ -1,0 +1,50 @@
+// Test
+
+@import "../index.less";
+
+// Initialize default settings
+#components > .btns();
+#components > .btn-groups( 640px ); // Must specify breakpoint
+
+.btn {
+  // Add Default sizing
+  #components > .btn-size(
+    40px          // Height
+  , 18px          // Left/Right padding
+  , 1px           // Border width
+  , 1px           // Border-bottom width
+  , 14px          // Font Size
+  );
+
+  // Default Color
+  #components > .btn-theme(
+    #fff        // Background
+  , #555        // Text Color
+  );
+
+  // Large sizing
+  .btn-large {
+    #components > .btn-size( 50px, 22px, 1px, 2px, 18px );    
+  }
+
+  // Themes
+  .btn-primary    { #components > .btn-theme( red, white ); }
+  .btn-secondary  { #components > .btn-theme( blue, white ); }
+  .btn-tertiary   { #components > .btn-theme( green, white ); }
+}
+
+.btn-group {
+  // Setup default button group theme
+  #components > .btn-group-theme(
+    #eee    // @background
+  , #efefef // @background-hover
+  , #e5e5e5 // @background-active
+  , #555    // @text-color
+  , #555    // @border-color
+  );
+
+  // Default butotn group sizing
+  > & {
+    #components > .btn-size( 32px, 22px, 0, 0, 12px );
+  }
+}

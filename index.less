@@ -33,7 +33,7 @@
   }
 
   // Button sizing mixin
-  .button-size (
+  .btn-size (
     @btn-height
   , @btn-side-padding
   , @btn-border-width
@@ -51,8 +51,8 @@
   }
 
   // Button theming mixin
-  .button-theme( @bg, @color ) when ( @bg, @color ){
-    .button-theme(
+  .btn-theme( @bg, @color ){
+    .btn-theme(
       @bg
     , lighten( @bg, 2% )
     , lighten( @bg, 1% )
@@ -61,7 +61,7 @@
     );
   }
 
-  .button-theme( @bg, @bg-hover, @bg-active, @border-color, @color ){
+  .btn-theme( @bg, @bg-hover, @bg-active, @border-color, @color ){
     background-color: @bg;
     color: @color;
     &:hover {
