@@ -11,7 +11,7 @@ package.json
 ```
 
 ```less
-@import "./node_modules/less-buttons/index.less"
+@import "./node_modules/less-buttons/index.less";
 
 // Initialize default settings
 #components > .btns();
@@ -42,23 +42,11 @@ package.json
   .btn-primary    { #components > .btn-theme( red, white ); }
   .btn-secondary  { #components > .btn-theme( blue, white ); }
   .btn-tertiary   { #components > .btn-theme( green, white ); }
-
-  // Button Groups
-  #components > .btn-group(
-    4px       // Border Radius
-  , 640px     // Breakpoint
-  );
-
-  #components > .btn-group-theme(
-    #eee      // Background
-  , #efefef   // Background:hover
-  , #999      // Foreground
-  );
 }
 
 .btn-group {
   // Setup default button group theme
-  #components > .btn-group-them(
+  #components > .btn-group-theme(
     #eee    // @background
   , #efefef // @background-hover
   , #e5e5e5 // @background-active
