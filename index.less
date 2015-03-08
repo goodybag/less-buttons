@@ -15,6 +15,7 @@
       text-decoration: none;
       letter-spacing: 0.4px;
       vertical-align: bottom;
+      cursor: pointer;
 
       &:hover {
         text-decoration: none;
@@ -42,12 +43,14 @@
   ){
     @btn-padding-top: ((@btn-height - (@btn-border-width + @btn-border-bottom-width)) / 2) + 1;
 
-    height:         @btn-height;
-    padding-top:    @btn-padding-top;
-    padding-right:  @btn-side-padding;
-    padding-bottom: @btn-padding-top - 2;
-    padding-left:   @btn-side-padding;
-    font-size:      @btn-font-size;
+    height:               @btn-height;
+    padding-top:          @btn-padding-top;
+    padding-right:        @btn-side-padding;
+    padding-bottom:       @btn-padding-top - 2;
+    padding-left:         @btn-side-padding;
+    border-width:         @btn-border-width;
+    border-bottom-width:  @btn-border-bottom-width;
+    font-size:            @btn-font-size;
   }
 
   // Button theming mixin
