@@ -1,7 +1,7 @@
 {
   "name": "less-buttons",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Buttons",
   "main": "index.js",
   "scripts": {
